@@ -9,6 +9,7 @@ import Team from './components/Team';
 import Booking from './components/Booking';
 import Location from './components/Location';
 import Footer from './components/Footer';
+import MobileBottomDock from './components/MobileBottomDock';
 
 export default function App() {
   
@@ -74,6 +75,9 @@ export default function App() {
 
       {/* Corporate Info Footer */}
       <Footer />
+
+      {/* Sticky Bottom Actions Bar for Mobile/Tablet */}
+      <MobileBottomDock />
     </div>
   );
 }

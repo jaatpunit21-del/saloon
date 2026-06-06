@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-luxury-black text-white pt-20 pb-8 border-t border-luxury-gold/20 relative overflow-hidden">
+    <footer className="bg-luxury-black text-white pt-20 pb-24 lg:pb-8 border-t border-luxury-gold/20 relative overflow-hidden">
       {/* Decorative subtle background lights */}
       <div className="absolute -left-20 -bottom-20 w-60 h-60 bg-luxury-gold/5 rounded-full blur-3xl pointer-events-none"></div>
 

@@ -31,14 +31,14 @@ export default function Hero() {
         className="absolute top-0 left-0 w-full h-full object-cover"
         poster="/images/hero_fallback.png"
       >
+        {/* Local video loop for maximum reliability and ad-blocker compliance */}
+        <source 
+          src="/images/hero_video.mp4" 
+          type="video/mp4" 
+        />
         {/* Cinematic styling loop video link from Pexels CDN / Vimeo */}
         <source 
           src="https://player.vimeo.com/external/414007137.sd.mp4?s=34a5d8b871c89f5bc3a67d5c5897813a48e4b5cb&profile_id=165&oauth2_token_id=57447761" 
-          type="video/mp4" 
-        />
-        {/* Alternate fallback source if first fails */}
-        <source 
-          src="https://assets.mixkit.co/videos/preview/mixkit-hairdresser-cutting-hair-of-a-woman-40097-large.mp4" 
           type="video/mp4" 
         />
       </video>

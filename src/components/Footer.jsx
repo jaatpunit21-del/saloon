@@ -90,9 +90,10 @@ export default function Footer() {
                 { name: 'Home', href: '#home' },
                 { name: 'About Us', href: '#about' },
                 { name: 'Services', href: '#services' },
+                { name: 'Special Offers', href: '#offers' },
+                { name: 'AI Recommender', href: '#ai-recommender' },
                 { name: 'Portfolio', href: '#gallery' },
-                { name: 'Testimonials', href: '#reviews' },
-                { name: 'Our Team', href: '#team' },
+                { name: 'FAQ', href: '#faq' },
               ].map((link) => (
                 <li key={link.name}>
                   <a

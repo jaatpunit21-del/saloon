@@ -38,9 +38,11 @@ export default function Navbar() {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
+    { name: 'Offers', href: '#offers' },
+    { name: 'AI Recommender', href: '#ai-recommender' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Reviews', href: '#reviews' },
-    { name: 'Team', href: '#team' },
+    { name: 'FAQ', href: '#faq' },
     { name: 'Location', href: '#location' },
   ];
 
@@ -60,13 +62,32 @@ export default function Navbar() {
     }
   };
 
+  const [showPromo, setShowPromo] = useState(true);
+
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      scrolled 
-        ? 'glassmorphism py-4 shadow-lg' 
-        : 'bg-transparent py-6 border-b border-white/5'
-    }`}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+    <div className="fixed top-0 left-0 w-full z-50 flex flex-col">
+      {showPromo && (
+        <div className="bg-luxury-gold text-luxury-black text-center py-2 px-6 text-[10px] md:text-xs font-semibold uppercase tracking-widest-luxury flex justify-between items-center relative border-b border-luxury-gold/20 shadow-md">
+          <span className="mx-auto flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-luxury-black animate-pulse" />
+            <span>Grand Reopening Offer: Use code <strong className="font-bold">FIRST15</strong> for 15% off first visit!</span>
+          </span>
+          <button 
+            onClick={() => setShowPromo(false)} 
+            className="text-luxury-black hover:text-white transition-colors focus:outline-none"
+            aria-label="Close promotion banner"
+          >
+            <X className="w-4.5 h-4.5" />
+          </button>
+        </div>
+      )}
+      
+      <nav className={`w-full transition-all duration-500 ${
+        scrolled 
+          ? 'glassmorphism py-4 shadow-lg' 
+          : 'bg-transparent py-6 border-b border-white/5'
+      }`}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Brand Name */}
         <a 
           href="#home" 
@@ -184,5 +205,6 @@ export default function Navbar() {
         </div>
       </div>
     </nav>
+    </div>
   );
 }

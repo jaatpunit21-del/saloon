@@ -3,13 +3,18 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import PromoOffers from './components/PromoOffers';
+import AIRecommender from './components/AIRecommender';
 import Gallery from './components/Gallery';
+import InstagramGrid from './components/InstagramGrid';
 import Reviews from './components/Reviews';
 import Team from './components/Team';
 import Booking from './components/Booking';
+import FAQ from './components/FAQ';
 import Location from './components/Location';
 import Footer from './components/Footer';
 import MobileBottomDock from './components/MobileBottomDock';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   
@@ -44,7 +49,7 @@ export default function App() {
 
   return (
     <div className="relative min-h-screen bg-luxury-cream text-luxury-black dark:bg-luxury-black dark:text-white font-sans selection:bg-luxury-gold/30 selection:text-luxury-black dark:selection:text-white antialiased transition-colors duration-500">
-      {/* Sticky Navigation Header */}
+      {/* Sticky Navigation Header with Promo announcement bar */}
       <Navbar />
 
       <main>
@@ -57,8 +62,17 @@ export default function App() {
         {/* Curated Service Menus (Hair & Laser tabs) */}
         <Services />
 
+        {/* Special Offers & Discounts */}
+        <PromoOffers />
+
+        {/* Interactive AI Hairstyle Recommendation Tool */}
+        <AIRecommender />
+
         {/* Masonry Portfolio Grid & Lightbox */}
         <Gallery />
+
+        {/* Instagram Grid showcasing lifestyle and daily cuts */}
+        <InstagramGrid />
 
         {/* Ratings and Client Testimonials */}
         <Reviews />
@@ -69,6 +83,9 @@ export default function App() {
         {/* Interactive Booking Reservation Form */}
         <Booking />
 
+        {/* Collapsible Accordion FAQs */}
+        <FAQ />
+
         {/* Physical map direction and hours panel */}
         <Location />
       </main>
@@ -78,6 +95,9 @@ export default function App() {
 
       {/* Sticky Bottom Actions Bar for Mobile/Tablet */}
       <MobileBottomDock />
+
+      {/* Floating WhatsApp chat widget */}
+      <WhatsAppButton />
     </div>
   );
 }

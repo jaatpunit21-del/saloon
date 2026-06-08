@@ -183,3 +183,72 @@ export const businessDetails = {
     { day: 'Sunday', time: '10:00 AM - 5:00 PM' }
   ]
 };
+
+export const promoOffersData = [
+  {
+    id: 'promo-1',
+    title: 'New Client Experience',
+    discount: '15% OFF',
+    description: 'Receive 15% off your first hair styling, coloring, or custom balayage session. Includes a complimentary organic deep conditioning treatment.',
+    code: 'FIRST15',
+    cta: 'Book Hair Service'
+  },
+  {
+    id: 'promo-2',
+    title: 'Laser Consultation Bundle',
+    discount: 'COMPLIMENTARY',
+    description: 'Book a full medical-grade laser hair removal consultation and receive a complimentary custom skin analysis and mapping test.',
+    code: 'LASERSKIN',
+    cta: 'Book Skin Consult'
+  },
+  {
+    id: 'promo-3',
+    title: 'Balayage & Glow Package',
+    discount: 'SAVE $50',
+    description: 'Combine any full balayage service with a Hydra-Infusion esthetic facial treatment. Ultimate hydration and shine in one booking.',
+    code: 'GLOW50',
+    cta: 'Book Package'
+  }
+];
+
+export const faqData = [
+  {
+    id: 'faq-1',
+    category: 'Hair Coloring & Styling',
+    question: 'What is the difference between highlights and balayage?',
+    answer: 'Highlights use foils from root to tip for structured, uniform brightness. Balayage is a freehand, hand-painted technique that creates a softer, more natural gradient that grows out seamlessly with no harsh root line.'
+  },
+  {
+    id: 'faq-2',
+    category: 'Hair Coloring & Styling',
+    question: 'How long does a balayage service typically take?',
+    answer: 'A full artisanal balayage, toner, and blowout session typically takes between 2.5 to 3.5 hours, depending on your hair length, thickness, and desired degree of lift.'
+  },
+  {
+    id: 'faq-3',
+    category: 'Laser Hair Removal',
+    question: 'Is laser hair removal permanent, and does it hurt?',
+    answer: 'Yes, laser hair removal offers permanent hair reduction. Our medical-grade laser systems feature advanced skin-cooling tips that make the treatment virtually painless, feeling like a light, warm snap.'
+  },
+  {
+    id: 'faq-4',
+    category: 'Laser Hair Removal',
+    question: 'How many laser hair removal sessions will I need?',
+    answer: 'Most clients require 6 to 8 sessions spaced 4 to 6 weeks apart. This timeline ensures we treat hair follicles during their active growth phases for maximum effectiveness.'
+  },
+  {
+    id: 'faq-5',
+    category: 'Salon Policies',
+    question: 'What is your cancellation and booking policy?',
+    answer: 'We require 24 hours notice for any cancellations or rescheduling. This allows us to offer the slot to clients on our waiting list. Rest assured, your initial online reservation is non-binding until confirmed by our receptionist.'
+  }
+];
+
+export const instagramData = [
+  { id: 'insta-1', image: '/images/insta_1.png', likes: 142, comments: 12 },
+  { id: 'insta-2', image: '/images/insta_2.png', likes: 218, comments: 24 },
+  { id: 'insta-3', image: '/images/insta_3.png', likes: 98, comments: 8 },
+  { id: 'insta-4', image: '/images/insta_4.png', likes: 312, comments: 31 },
+  { id: 'insta-5', image: '/images/insta_5.png', likes: 176, comments: 15 },
+  { id: 'insta-6', image: '/images/insta_6.png', likes: 254, comments: 20 }
+];
